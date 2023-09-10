@@ -8,7 +8,7 @@
     background-color: whitesmoke;
     justify-content: center;
     position: relative;
-    left:270px;
+    left:300px;
     top:20px;
     display:flex;
 }
@@ -18,8 +18,6 @@
     background-color: #ff0000;
     position: relative;
     left:-90px;
-    /* background-image: url(location-symbol-with-building.jpg);
-    background-size: cover; */
 }
 .heading{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -39,8 +37,8 @@
     color:#ff0000;
 }
 #usernamebox{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top:60px;
     width:400px;
@@ -49,8 +47,8 @@
     left:30px;
 }
 #email{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top:100px;
     width:400px;
@@ -59,8 +57,8 @@
     left:30px;
 }
 #password{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     width:400px;
     height: 30px;
@@ -84,7 +82,7 @@
     font-size: 16px;
 }
 #mobileno{
-    font-size: 18px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     width:350px;
@@ -122,4 +120,18 @@
     left:80px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+.TandC{
+    text-decoration: underline;
+    color:black;
+}
+
+.house_find_image{
+    background-image: url(HouseFind.png);
+    background-size: cover;
+    height: 80px;
+    width:80px;
+    position: relative;
+    top:200px;
+    left:30px;
 }
