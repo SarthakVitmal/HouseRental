@@ -92,6 +92,22 @@ body{
     border: 2px solid white;
 }
 
+.centerheading{
+    position: relative;
+    top:150px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left:510px;
+    font-size: 50px;
+    color: red;
+}
+.centerheading2{
+    position: relative;
+    top:150px;
+    font-family:Arial, Helvetica, sans-serif;
+    left:600px;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+}
 .searchbar{
     position: absolute;
     top:300px;
@@ -124,18 +140,23 @@ body{
     left:380px;
     display: flex;
 }
-.buy_option,
-.sell_option,.rent_option{
-    padding:5px;
+.option{
+    padding: 5px;
     background-color: red;
-    width:120px;
+    width: 120px;
     font-family: arial;
     font-size: 16px;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
     height: 40px;
     margin-left: 100px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: text-decoration 2s ease;
 }
+.option:hover {
+    text-decoration: underline;
+  }
 .contactustext{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
