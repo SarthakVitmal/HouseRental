@@ -92,19 +92,23 @@ body{
     border: 2px solid white;
 }
 
+.centerheadings{
+    position: relative;
+    height:100px;
+    top:150px;
+}
+
 .centerheading{
     position: relative;
-    top:150px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left:510px;
     font-size: 50px;
     color: red;
+    left: 500px;
 }
 .centerheading2{
     position: relative;
-    top:150px;
     font-family:Arial, Helvetica, sans-serif;
-    left:600px;
+    left:580px;
     font-size: 20px;
     color: rgb(49, 49, 49);
 }
@@ -199,6 +203,7 @@ body{
     color:red
 }
 footer{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: red;
     color: white;
     text-align: center;
