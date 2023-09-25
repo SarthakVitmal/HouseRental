@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.margin{
+    height:600px;
+    width:1200px;
+    background-color:#fff;
+    position: absolute;
+    top: 60px;
+    left:170px;
+}
+.logintxt{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color:red;
+    padding:10px;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.signuplink{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.link{
+    text-decoration: none;
+    color:red
+}
+.email_inputbox{
+    display:flex;
+}
+.signinwithemail{
+    height:280px;
+    width:100%;
+    background-color:#fff;
+    position: absolute;
+    left:100px;
+    top:200px;
+    padding-right: 110px;
+    display: inline-block;
+
+}
+.email_input,.password_input{
+    height:40px;
+    width:330px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:red;
+    position: relative;
+    left: 330px;
+    margin-bottom: 20px;
+}
+.loginbutton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    color:#fff;
+    position: relative;
+    left: -100px;
+
+}
+.l_button{
+    padding:10px;
+    width:120px;
+    position: relative;
+    top:30px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 15px;
+    color:#fff;
+}
+
+
+@media (max-width: 768px) {
+    .logintxt {
+        font-size: 30px;
+    }
+
+    .signuplink {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logintxt {
+        font-size: 24px;
+    }
+
+    .signuplink {
+        font-size: 14px;
+    }
+
+    .email_input,
+    .password_input {
+        font-size: 16px;
+    }
+
+    .l_button {
+        font-size: 16px;
+    }
+}
