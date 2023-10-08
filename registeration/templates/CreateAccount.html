@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\SARTHAK\Desktop\Sem3-MiniProject\registeration\static\CreateAccount.css"> 
+    <link rel="icon" href="D:\Sarthak\VS-Code\GitHub\Sem3-MiniProject\Untitled design.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Create Your Account</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="left_side">
+            <p class="heading2">Welcome To <b>DreamHouseMarket</b></p>
+        </div>
+
+    <div class="right_side">
+        <h2 class="heading">Create Your Account</h2>
+        <p class="sub_heading">Dont have an account? It takes less than a minute. If you already have an account <a class="Login_c" href= "C:\Users\SARTHAK\Desktop\Sem3-MiniProject\templates\LoginPage.html" target="main">Login</a></p>
+        <form action="" method="post">
+            {% csrf_token %}
+
+            <div class="username">
+                <input type="text" id="usernamebox" placeholder=" Username" name="username" required>
+            </div>   
+            <div class="email">
+                <input type="email" id="email" placeholder=" Email" name="email" required>
+            </div>
+            <div class="password">
+                <input type="password" id="password" placeholder=" Password" name="password" required>
+            </div>
+            <div class="mobileno_c">
+                <select  class="countrycode">
+                    <option>+91</option>
+                </select>
+                <input type="text" id="mobileno" placeholder=" MobileNo" name="Mobile_No" maxlength="10" pattern="[0-9]{10}" required>
+            </div>
+            <button id="submit_button" type="submit">Sign Up</button>
+        </form>
+        <p class="sub_heading2">By continuing, you agree to our <a class="TandC" href="file:///D:/Sarthak/VS-Code/GitHub/Sem3-MiniProject/templates/TermsAndConditionPage.html">Terms & Conditions</a></p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:700px;
+    width:1000px;
+    background-color: whitesmoke;
+    justify-content: center;
+    position: relative;
+    left:300px;
+    top:20px;
+    display:flex;
+}
+.left_side{
+    height: 700px;
+    width:400px;
+    background-color: #ff0000;
+    position: relative;
+    left:-90px;
+}
+.heading{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 50px;
+    position: relative;
+    top:20px;
+}
+.sub_heading{
+    position: relative;
+    top:30px;
+    left: -30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Login_c{
+    text-decoration: underline;
+    color:#ff0000;
+}
+#usernamebox{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:60px;
+    width:400px;
+    height: 30px;
+    border-radius: 5px;
+    left:30px;
+}
+#email{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:100px;
+    width:400px;
+    height: 30px;
+    border-radius: 5px;
+    left:30px;
+}
+#password{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width:400px;
+    height: 30px;
+    border-radius: 5px;
+    left:30px;
+    top:140px;
+}
+.mobileno_c{
+    display:flex;
+}
+.countrycode{
+    padding:5px;
+    position: relative;
+    top:179px;
+    left:31px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 34px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+#mobileno{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width:350px;
+    height: 31px;
+    left:26px;
+    top:179px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+#submit_button{
+    position: relative;
+    top:240px;
+    left:180px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.heading2{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+    position: relative;
+    top:20px;
+    align-items: center;
+    justify-content: center;
+    left: 30px;
+    color:white
+}
+.sub_heading2{
+    position: relative;
+    top:260px;
+    left:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.TandC{
+    text-decoration: underline;
+    color:black;
+}
+
+.house_find_image{
+    background-image: url(HouseFind.png);
+    background-size: cover;
+    height: 80px;
+    width:80px;
+    position: relative;
+    top:200px;
+    left:30px;
+}
+</style>
